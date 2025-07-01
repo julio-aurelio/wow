@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Festa Junina com Amor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌽 Festa Junina com Você, Meu Amor 🎉</h1>
+    </header>
+
+    <main>
+      <h2>Oi, meu amorzinho!</h2>
+      <p>
+        Preparei esse cantinho junino só pra você! 🌾<br />
+        Se eu tivesse que escolher entre respirar e te amar… usaria meu último suspiro pra dizer que te amo. 💘
+      </p>
+
+      <button onclick="mostrarSurpresa()">Clique aqui para ver a surpresa 🎁</button>
+
+      <div id="surpresa" class="escondido">
+        <p>Você é minha fogueira que aquece o coração nessa festança! 🔥💖</p>
+        <img src="casalzinho.jpg" alt="Casal na festa junina" />
+      </div>
+    </main>
+  </div>
+
+  <!-- AGORA SIM: JavaScript embutido corretamente -->
+  <script>
+    function mostrarSurpresa() {
+      const surpresa = document.getElementById("surpresa");
+      surpresa.classList.remove("escondido");
+
+      // Criar vários corações
+      for (let i = 0; i < 30; i++) {
+        criarCoracao();
+      }
+    }
+
+    function criarCoracao() {
+      const coracao = document.createElement("div");
+      coracao.classList.add("coracao");
+      coracao.innerText = "❤️";
+      document.body.appendChild(coracao);
+
+      const tamanho = Math.random() * 20 + 20;
+      coracao.style.left = Math.random() * 100 + "vw";
+      coracao.style.fontSize = `${tamanho}px`;
+
+      setTimeout(() => {
+        coracao.remove();
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
