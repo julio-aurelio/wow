@@ -1,4 +1,4 @@
-/* Fonte bonita e base */
+
 body {
   margin: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Container principal */
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-/* Cabeçalho com fundo alegre */
+
 header {
   background: linear-gradient(to right, #f28500, #ffb347);
   color: white;
@@ -36,14 +36,14 @@ h2 {
   margin-top: 1.5rem;
 }
 
-/* Parágrafos com espaçamento e emojis */
+
 main p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-/* Botão estilizado */
+
 button {
   padding: 12px 25px;
   background-color: #4caf50;
@@ -62,7 +62,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Surpresa escondida com fade */
+
 #surpresa {
   margin-top: 2rem;
   animation: fadeIn 1s ease-in-out;
@@ -77,7 +77,7 @@ button:hover {
   to { opacity: 1; }
 }
 
-/* Imagem fofa */
+
 img {
   width: 250px;
   margin-top: 1rem;
@@ -90,7 +90,7 @@ img:hover {
   transform: scale(1.05);
 }
 
-/* ❤️ CORAÇÕES */
+
 .coracao {
   position: fixed;
   bottom: 0;
